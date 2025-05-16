@@ -16,6 +16,6 @@ output3 = a%2 != 0 and a < 10  # bool: True if a is odd number less than 10
 
 output4 = a > -10 and a < 10 # bool: True if a is an odd number within the range -10 and 10
 
-output5 = a % 2 == 0 and len(str(a)) <= 10 # bool: True if a has even number of digits but not more than 10 digits
+output5 = (len(str(abs(a))) % 2 == 0) and (len(str(abs(a))) <= 10) # bool: True if a has even number of digits but not more than 10 digits
 
 is_offer1_cheaper = (price1 - (price1 * discount1/100)) < (price2 - (price2 * discount2/100)) # bool: True if the offer1 is strictly cheaper
