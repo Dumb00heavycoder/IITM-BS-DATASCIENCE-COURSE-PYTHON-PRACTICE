@@ -60,7 +60,7 @@ else:
 if color_code == "R":
     color = "red" 
 elif color_code == "B" :
-        color = "blue"
+        color = "blue" 
 elif color_code == "G":
     color = "green"
 else:
@@ -87,4 +87,4 @@ if hour_str.isdigit() and 1 <= int(hour_str) <= 12:
         time_of_day = "Night"
 else:
     time_of_day = "Invalid"
-
+ 
