@@ -6,9 +6,8 @@ while (absnum > 0):
     r = absnum % 10 
     absnum = absnum // 10
     rev = rev * 10 + r 
-if (num<0):
-    rev = rev - 2* rev
-if (num == rev):
-    print("Palindrome")
+rev = rev if num > 0 else -rev
+if num == rev:
+    print("palindrom")
 else:
-    print("Not Palindrome")
+    print("Not palindrom")
